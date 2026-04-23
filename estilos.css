@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  --color-primario: #000;
+  --color-secundario: #f00;
+  --color-accent: #ff00ff;
+  --font: Lato, "Sans Serif";
+  --border-radius: 0.5rem;
+}
+
+html,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 20px;
+  height: 60px;
+  border: 1px solid red;
+}
+
+.header_nav-ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.nav_ul-a {
+  text-decoration: none;
+  color: var(--color-primario);
+}
+
+.card {
+  border: 1px solid red;
+  width: 350px;
+  height: 470px;
+  border-radius: var(--border-radius);
+  background-color: #efefef;
+
+  img {
+    width: 100%;
+    padding: 10px;
+    aspect-ratio: 1;
+    border-radius: var(--border-radius) + 10px;
+  }
+
+  .body_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 10px;
+
+    .header_card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        h2 {
+            text-transform: uppercase;
+        }
+    }
+
+    .descripcion {
+      color: #898989;
+      margin-bottom: 5px;
+    }
+
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      
+      .precio {
+        font-size: 1.7rem;
+      }
+
+      button {
+        padding: 6px 8px;
+        outline: none;
+        border: none;
+        border-radius: 1.5rem;
+        background-color: var(--color-accent);
+      }
+    }
+  }
+}
