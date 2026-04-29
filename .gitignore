@@ -1,4 +1,3 @@
 .vscode
 
-# no hace falta pero no esta de mas...
-.env
+*.*:Zone.*
