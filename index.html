@@ -4,34 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estilos.css" />
-    <title>TIENDA DE ABRIGOS| Inicio</title>
+    <link rel="stylesheet" href="responsive.css" />
+    <title>TIENDA DE ABRIGOS | Inicio</title>
   </head>
   <body>
+    <a href="#contenido-principal" class="sr-only">Saltar al contenido principal</a>
     <!--  -->
     <header class="header" id="nav">
       <span class="header_logo"><strong>KAT</strong> CLOTHES</span>
       <nav class="header_nav">
         <ul class="header_nav-ul">
-          <a class="nav_ul-a" href="./index.html">
-            <li class="">Inicio</li>
-          </a>
-          <a class="nav_ul-a" href="./pages/productos.html">
-            <li class="">Productos</li>
-          </a>
-          <a class="nav_ul-a" href="./pages/nosotros.html">
-            <li class="">Nosotros</li>
-          </a>
-          <a class="nav_ul-a" href="./pages/contacto.html">
-            <li class="">Contacto</li>
-          </a>
+          <li class="">
+            <a class="nav_ul-a" href="./index.html" aria-current="page">Inicio</a>
+          </li>
+          <li class="">
+            <a class="nav_ul-a" href="./pages/producto.html">Productos</a>
+          </li>
+          <li class="">
+            <a class="nav_ul-a" href="./pages/nosotros.html">Nosotros</a>
+          </li>
+          <li class="">
+            <a class="nav_ul-a" href="./pages/contacto.html">Contacto</a>
+          </li>
         </ul>
       </nav>
     </header>
     <!--  -->
-    <main class="main">
+    <main class="main" id="contenido-principal">
     <header class="header_hero">
         <div class="hero1">
-            <h2 class="hero_text">Abrigos patagonicos y originales.</h2>
+            <h1 class="hero_text">Subscribite a nuestro newletters</h1>
+            <p class="hero_text_p">Enterate de nuevas productos, ofertas y obtené <strong>10% de descuento</strong> en tu primera compra</p>
+            <form action="./" method="get" class="hero_newsletter-container">
+                <input class="hero_newsletter-container_input" type="email" aria-label="Tu correo electrónico" placeholder="Tu correo electrónico" name="email" required>
+                <button class="hero_newsletter-container_btn" type="submit">Suscribirse</button>
+            </form>
         </div>
     </header>
         <div class="categories">
@@ -48,9 +55,7 @@
                               </div>
                               <p class="descripcion">Nuestro único sueter rojo, ideal para para cualquier ocasión.</p>
                               <div>
-                                  <a href="pages/detalleProductoSueterRojo.html">
-                                      <button>Ver más</button>
-                                  </a>
+                                  <a href="./pages/detalleProductoSueterRojo.html" class="btn-ver-mas">Ver más</a>
                               </div>
                           </div>
                       </div>
@@ -59,13 +64,11 @@
                           <div class="body_card">
                               <div class="header_card">
                                   <h2>Campera Naranja</h2>
-                                  <p class="precio">$55.999</p>
+                                  <p class="precio">$49.999</p>
                               </div>
                               <p class="descripcion">Nuestra única campera naranja, ideal para para cualquier ocasión.</p>
                               <div>
-                                  <a href="pages/detalleProductoCamperaNaranja.html">
-                                      <button>Ver más</button>
-                                  </a>
+                                  <a href="./pages/detalleProductoCamperaNaranja.html" class="btn-ver-mas">Ver más</a>
                               </div>
                           </div>
                       </div>
@@ -80,13 +83,11 @@
                           <div class="body_card">
                               <div class="header_card">
                                   <h2>Campera Celeste</h2>
-                                  <p class="precio">$55.999</p>
+                                  <p class="precio">$49.999</p>
                               </div>
                               <p class="descripcion">Nuestra famosa Campera Celeste Patagónica, ideal para hacer trekking.</p>
                               <div>
-                                  <a href="pages/detalleProductoCeleste.html">
-                                      <button>Ver más</button>
-                                  </a>
+                                  <a href="./pages/detalleProductoCeleste.html" class="btn-ver-mas">Ver más</a>
                               </div>
                           </div>
                               </div>
@@ -99,9 +100,7 @@
                               </div>
                               <p class="descripcion">Nuestra única campera verde, ideal para para cualquier ocasión.</p>
                               <div>
-                                  <a href="pages/detalleProductoCamperaVerde.html">
-                                      <button>Ver más</button>
-                                  </a>
+                                  <a href="./pages/detalleProductoCamperaVerde.html" class="btn-ver-mas">Ver más</a>
                               </div>
                           </div>
                               </div>
@@ -114,9 +113,7 @@
                               </div>
                               <p class="descripcion">Nuestro único sueter gris, ideal para los días de frío.</p>
                               <div>
-                                  <a href="pages/detalleProductoSueterGris.html">
-                                      <button>Ver más</button>
-                                  </a>
+                                  <a href="./pages/detalleProductoSueterGris.html" class="btn-ver-mas">Ver más</a>
                               </div>
                           </div>
                               </div>
@@ -129,9 +126,7 @@
                               </div>
                               <p class="descripcion">Nuestro único sueter azul, ideal para los días de frío.</p>
                               <div>
-                                  <a href="pages/detalleProductoSueterAzul.html">
-                                      <button>Ver más</button>
-                                  </a>
+                                  <a href="./pages/detalleProductoSueterAzul.html" class="btn-ver-mas">Ver más</a>
                               </div>
                           </div>
                               </div>
@@ -139,9 +134,10 @@
                 </div>
             </div>
         </div>
+    </main>
     <footer>
       <p>Todos los derechos reservados</p>
-      <p>Contacto: tienda@tiendafantasia.com.ar</p>
+      <p>Contacto: tienda@katclothes.com.ar</p>
       <!-- redes sociales -->
       <div class="rrss">
         <a href="#">Facebook</a>

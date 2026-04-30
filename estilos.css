@@ -18,6 +18,28 @@ html,
   scroll-behavior: smooth;
 }
 
+/* Accesibilidad */
+a:focus-visible, 
+button:focus-visible,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 3px solid var(--color-secundario);
+  outline-offset: 2px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -115,12 +137,8 @@ html,
       justify-content: center;
       margin-top: auto;
 
-      a {
-        width: 100%;
-        text-decoration: none;
-      }
-
-      button {
+      a.btn-ver-mas {
+        display: block;
         width: 100%;
         padding: 12px;
         color: white;
@@ -133,6 +151,8 @@ html,
         text-transform: uppercase;
         letter-spacing: 1px;
         font-size: 0.85rem;
+        text-align: center;
+        box-sizing: border-box;
 
         &:hover {
           background-color: var(--color-accent-hover);
@@ -157,16 +177,63 @@ html,
     background-size: cover;
     background-position: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 15px;
 
     h2 { 
       text-decoration: underline;
-      font-size: 20px;
+      font-size: 32px;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       color: rgb(243, 231, 208);
       text-shadow: 2px 2px 4px rgb(90, 77, 69);
-    };
+      margin: 0;
+      text-align: center;
+    }
+
+    .hero_text_p {
+      color: rgb(243, 231, 208);
+      font-size: 18px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+      margin: 0;
+      text-align: center;
+    }
+
+    .hero_newsletter-container {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .hero_newsletter-container_input {
+      padding: 12px 15px;
+      border: none;
+      border-radius: var(--border-radius);
+      width: 250px;
+      font-size: 1rem;
+    }
+
+    .hero_newsletter-container_input:focus {
+      outline: 2px solid var(--color-secundario);
+    }
+
+    .hero_newsletter-container_btn {
+      padding: 12px 20px;
+      background-color: var(--color-accent);
+      color: white;
+      border: none;
+      border-radius: var(--border-radius);
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero_newsletter-container_btn:hover {
+      background-color: var(--color-accent-hover);
+    }
   }
 }
 .container_filtros-cards {
@@ -410,8 +477,7 @@ footer {
 .form-group input:focus,
 .form-group textarea:focus,
 .form-group select:focus {
-  outline: none;
-  border-color: var(--color-accent);
+  border-color: var(--color-secundario);
 }
 
 .form-group textarea {
