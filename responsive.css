@@ -9,7 +9,7 @@
 }
 
 /* Tablet */
-@media (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .header {
     padding: 10px 20px;
   }
@@ -20,7 +20,8 @@
 
   .container_cards {
     grid-template-columns: repeat(2, 350px);
-    grid-template-rows: repeat(4, 520px);
+    grid-template-rows: repeat(2, 500px);
+    gap: 30px;
   }
 
   .header_hero {
@@ -91,8 +92,9 @@
   }
 
   .container_cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
+    gap: 20px;
   }
 
   .card {
