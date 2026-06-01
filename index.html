@@ -4,269 +4,146 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estilos.css" />
-    <title>TIENDA DE ABRIGOS| Inicio</title>
+    <link rel="stylesheet" href="responsive.css" />
+    <title>TIENDA DE ABRIGOS | Inicio</title>
   </head>
   <body>
+    <a href="#contenido-principal" class="sr-only">Saltar al contenido principal</a>
     <!--  -->
     <header class="header" id="nav">
-      <span class="header_logo">LOGO</span>
+      <span class="header_logo"><strong>KAT</strong> CLOTHES</span>
       <nav class="header_nav">
         <ul class="header_nav-ul">
-          <a class="nav_ul-a" href="#">
-            <li class="">Inicio</li>
-          </a>
-          <a class="nav_ul-a" href="#">
-            <li class="">Productos</li>
-          </a>
-          <a class="nav_ul-a" href="#">
-            <li class="">Nosotros</li>
-          </a>
-          <a class="nav_ul-a" href="#">
-            <li class="">Contacto</li>
-          </a>
+          <li class="">
+            <a class="nav_ul-a" href="./index.html" aria-current="page">Inicio</a>
+          </li>
+          <li class="">
+            <a class="nav_ul-a" href="./pages/producto.html">Productos</a>
+          </li>
+          <li class="">
+            <a class="nav_ul-a" href="./pages/nosotros.html">Nosotros</a>
+          </li>
+          <li class="">
+            <a class="nav_ul-a" href="./pages/contacto.html">Contacto</a>
+          </li>
         </ul>
       </nav>
     </header>
     <!--  -->
-    <div class="header_hero">
-      <div class="hero1">
-        <h2>texto de bienvenida</h2>
+    <main class="main" id="contenido-principal">
+    <header class="header_hero">
+        <div class="hero1">
+            <h1 class="hero_text">Subscribite a nuestro newletters</h1>
+            <p class="hero_text_p">Enterate de nuevas productos, ofertas y obtené <strong>10% de descuento</strong> en tu primera compra</p>
+            <form action="./" method="get" class="hero_newsletter-container">
+                <input class="hero_newsletter-container_input" type="email" aria-label="Tu correo electrónico" placeholder="Tu correo electrónico" name="email" required>
+                <button class="hero_newsletter-container_btn" type="submit">Suscribirse</button>
+            </form>
+        </div>
+    </header>
+        <div class="categories">
+            <div class="cat">
+                <h3>Abrigos De Tonos Calidos</h3>
+                <div class="lista">
+                    <div class="container_cards">
+                      <div class="card">
+                          <img src="./public/img/sueter_rojo.png" alt="Sueter Rojo">
+                          <div class="body_card">
+                              <div class="header_card">
+                                  <h2>Sueter Rojo</h2>
+                                  <p class="precio">$27.000</p>
+                              </div>
+                              <p class="descripcion">Nuestro único sueter rojo, ideal para para cualquier ocasión.</p>
+                              <div>
+                                  <a href="./pages/detalleProductoSueterRojo.html" class="btn-ver-mas">Ver más</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <img src="./public/img/campera_naranja.png" alt="Campera Naranja">
+                          <div class="body_card">
+                              <div class="header_card">
+                                  <h2>Campera Naranja</h2>
+                                  <p class="precio">$49.999</p>
+                              </div>
+                              <p class="descripcion">Nuestra única campera naranja, ideal para para cualquier ocasión.</p>
+                              <div>
+                                  <a href="./pages/detalleProductoCamperaNaranja.html" class="btn-ver-mas">Ver más</a>
+                              </div>
+                          </div>
+                      </div>
+                </div>
+            </div>
+                <div class="cat">
+                    <h3>Abrigos De Tonos Frios</h3>
+                    <div class="lista">
+                     <div class="container_cards">
+                        <div class="card">
+                          <img src="./public/img/campera_celeste.png" alt="Campera Celeste">
+                          <div class="body_card">
+                              <div class="header_card">
+                                  <h2>Campera Celeste</h2>
+                                  <p class="precio">$49.999</p>
+                              </div>
+                              <p class="descripcion">Nuestra famosa Campera Celeste Patagónica, ideal para hacer trekking.</p>
+                              <div>
+                                  <a href="./pages/detalleProductoCeleste.html" class="btn-ver-mas">Ver más</a>
+                              </div>
+                          </div>
+                              </div>
+                              <div class="card">
+                          <img src="./public/img/campera_verde.png" alt="Campera Verde">
+                          <div class="body_card">
+                              <div class="header_card">
+                                  <h2>Campera Verde</h2>
+                                  <p class="precio">$49.999</p>
+                              </div>
+                              <p class="descripcion">Nuestra única campera verde, ideal para para cualquier ocasión.</p>
+                              <div>
+                                  <a href="./pages/detalleProductoCamperaVerde.html" class="btn-ver-mas">Ver más</a>
+                              </div>
+                          </div>
+                              </div>
+                              <div class="card">
+                          <img src="./public/img/sueter_gris.png" alt="Sueter Gris">
+                          <div class="body_card">
+                              <div class="header_card">
+                                  <h2>Sueter Gris</h2>
+                                  <p class="precio">$27.000</p>
+                              </div>
+                              <p class="descripcion">Nuestro único sueter gris, ideal para los días de frío.</p>
+                              <div>
+                                  <a href="./pages/detalleProductoSueterGris.html" class="btn-ver-mas">Ver más</a>
+                              </div>
+                          </div>
+                              </div>
+                              <div class="card">
+                          <img src="./public/img/sueter_azul.png" alt="Sueter Azul">
+                          <div class="body_card">
+                              <div class="header_card">
+                                  <h2>Sueter Azul</h2>
+                                  <p class="precio">$27.000</p>
+                              </div>
+                              <p class="descripcion">Nuestro único sueter azul, ideal para los días de frío.</p>
+                              <div>
+                                  <a href="./pages/detalleProductoSueterAzul.html" class="btn-ver-mas">Ver más</a>
+                              </div>
+                          </div>
+                              </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+      <p>Todos los derechos reservados</p>
+      <p>Contacto: tienda@katclothes.com.ar</p>
+      <!-- redes sociales -->
+      <div class="rrss">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Tiktok</a>
       </div>
-    </div>
-
-    <div class="container_filtros-cards">
-      <div class="filtros">
-        <div class="categorias">
-          <input type="radio" name="filtro" id="all" />
-          <input type="radio" name="filtro" id="cat1" />
-          <input type="radio" name="filtro" id="cat2" />
-          <div class="filtb">
-            <label for="all" class="filter-label">Todos</label>
-            <label for="cat1" class="filter-label">Cata</label>
-            <label for="cat2" class="filter-label">Catb</label>
-          </div>
-        </div>
-        <a href=""></a>
-      </div>
-      <div class="container_cards">
-        <div class="card">
-          <img
-            src="./public/img/campera_miel.png"
-            alt="Campera con textura de miel"
-          />
-          <div class="body_card">
-            <div class="header_card">
-              <h2>Campera Miel</h2>
-              <p class="precio">$30.000</p>
-            </div>
-            <p class="descripcion">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque,
-              voluptates.
-            </p>
-            <div>
-              <button>Ver más</button>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="./public/img/campera_miel.png"
-            alt="Campera con textura de miel"
-          />
-          <div class="body_card">
-            <div class="header_card">
-              <h2>Campera Miel</h2>
-              <p class="precio">$30.000</p>
-            </div>
-            <p class="descripcion">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque,
-              voluptates.
-            </p>
-            <div>
-              <button>Ver más</button>
-            </div>
-          </div>
-        </div>
-        <div class="card cat1">
-          <img
-            src="./public/img/campera_miel.png"
-            alt="Campera con textura de miel"
-          />
-          <div class="body_card">
-            <div class="header_card">
-              <h2>Campera Miel</h2>
-              <p class="precio">$30.000</p>
-            </div>
-            <p class="descripcion">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque,
-              voluptates.
-            </p>
-            <div>
-              <button>Ver más</button>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="./public/img/campera_miel.png"
-            alt="Campera con textura de miel"
-          />
-          <div class="body_card">
-            <div class="header_card">
-              <h2>Campera Miel</h2>
-              <p class="precio">$30.000</p>
-            </div>
-            <p class="descripcion">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque,
-              voluptates.
-            </p>
-            <div>
-              <button>Ver más</button>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="./public/img/campera_miel.png"
-            alt="Campera con textura de miel"
-          />
-          <div class="body_card">
-            <div class="header_card">
-              <h2>Campera Miel</h2>
-              <p class="precio">$30.000</p>
-            </div>
-            <p class="descripcion">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque,
-              voluptates.
-            </p>
-            <div>
-              <button>Ver más</button>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="./public/img/campera_miel.png"
-            alt="Campera con textura de miel"
-          />
-          <div class="body_card">
-            <div class="header_card">
-              <h2>Campera Miel</h2>
-              <p class="precio">$30.000</p>
-            </div>
-            <p class="descripcion">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque,
-              voluptates.
-            </p>
-            <div>
-              <button>Ver más</button>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="./public/img/campera_miel.png"
-            alt="Campera con textura de miel"
-          />
-          <div class="body_card">
-            <div class="header_card">
-              <h2>Campera Miel</h2>
-              <p class="precio">$30.000</p>
-            </div>
-            <p class="descripcion">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque,
-              voluptates.
-            </p>
-            <div>
-              <button>Ver más</button>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="./public/img/campera_miel.png"
-            alt="Campera con textura de miel"
-          />
-          <div class="body_card">
-            <div class="header_card">
-              <h2>Campera Miel</h2>
-              <p class="precio">$30.000</p>
-            </div>
-            <p class="descripcion">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque,
-              voluptates.
-            </p>
-            <div>
-              <button>Ver más</button>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="./public/img/campera_miel.png"
-            alt="Campera con textura de miel"
-          />
-          <div class="body_card">
-            <div class="header_card">
-              <h2>Campera Miel</h2>
-              <p class="precio">$30.000</p>
-            </div>
-            <p class="descripcion">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque,
-              voluptates.
-            </p>
-            <div>
-              <button>Ver más</button>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="./public/img/campera_miel.png"
-            alt="Campera con textura de miel"
-          />
-          <div class="body_card">
-    <main class="main">
-    <aside class="category">
-        categotias:
-        <ul class="category_ul">
-            <li class="category_ul-li">
-                <input type="checkbox" id="camperas">
-                <label for="camperas">Camperas</label>
-            </li>
-            <li class="category_ul-li">
-                <input type="checkbox" id="abrigos">
-                <label for="abrigos">Abrigos</label>
-            </li>
-            <li class="category_ul-li">
-                <input type="checkbox" id="sacos">
-                <label for="sacos">Sacos</label>
-            </li>
-            <li class="category_ul-li">
-                <input type="checkbox" id="pantalones">
-                <label for="pantalones">Pantalones</label>
-            </li>
-        </ul>
-    </aside>
-
-    <div class="card">
-        <img src="./public/img/campera_miel.png" alt="">
-        <div class="body_card">
-            <div class="header_card">
-              <h2>Campera Miel</h2>
-              <p class="precio">$30.000</p>
-            </div>
-            <p class="descripcion">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque,
-              voluptates.
-            </p>
-            <div>
-              <button>Ver más</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <a href="#nav" class="">arriba</a>
+    </footer>
   </body>
 </html>
