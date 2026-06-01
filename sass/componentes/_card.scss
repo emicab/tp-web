@@ -1,72 +1,51 @@
 @use "../mixins" as *;
 
 .card {
-  // estilos para la tarjeta del producto
-  .card {
-    // ... resto de estilos
+  width: 340px;
+  height: 500px;
+  border-radius: var(--border-radius);
+  background-color: #efefef;
+  overflow: hidden;
 
-    div {
+  img {
+    width: 100%;
+    aspect-ratio: 1;
+  }
+
+  .body_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 5px 10px;
+
+    .header_card {
       display: flex;
-      flex-direction: row;
+      align-items: center;
       justify-content: space-between;
 
+      .nombre-producto {
+        text-transform: uppercase;
+        font-size: 1.3rem;
+      }
       .precio {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: var(--color-accent);
       }
-
-      @include button(var(--color-primario));
     }
+
+    .descripcion {
+      color: #898989;
+      margin-bottom: 5px;
+    }
+
+    @include button(var(--color-primario));
   }
-}
+  transition: 0.3s;
 
-.card {
-  // estilos para la tarjeta del producto
-  .card {
-    border: 1px solid red;
-    width: 350px;
-    height: 470px;
-    border-radius: var(--border-radius);
-    background-color: #efefef;
-
-    img {
-      width: 100%;
-      padding: 10px;
-      aspect-ratio: 1;
-      border-radius: var(--border-radius);
-    }
-
-    .body_card {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      margin: 0 10px;
-
-      .header_card {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        h2 {
-          text-transform: uppercase;
-        }
-      }
-
-      .descripcion {
-        color: #898989;
-        margin-bottom: 5px;
-      }
-
-      div {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
-        .precio {
-          font-size: 1.7rem;
-        }
-
-        @include button(#ddd);
-      }
-    }
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
   }
 }

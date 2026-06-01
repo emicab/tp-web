@@ -2,74 +2,78 @@
 :root {
   --color-primario: #69420f;
   --color-secundario: #d88f22;
-  --color-accent: #7a4420b6;
+  --color-accent: #d88f22;
   --color-accent-hover: #6d421a;
   --font: Lato, "Sans Serif";
+  --border-radius: 0.8rem;
 }
 
-.card .card div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.card .card div .precio {
-  font-size: 1.7rem;
-}
-.card .card div {
-  padding: 6px 8px;
-  outline: none;
-  border: none;
-  border-radius: 1.5rem;
-  background-color: var(--color-primario);
-  position: relative;
-}
-
-.card .card {
-  border: 1px solid red;
-  width: 350px;
-  height: 470px;
+.card {
+  width: 340px;
+  height: 500px;
   border-radius: var(--border-radius);
   background-color: #efefef;
+  overflow: hidden;
 }
-.card .card img {
+.card img {
   width: 100%;
-  padding: 10px;
   aspect-ratio: 1;
-  border-radius: var(--border-radius);
 }
-.card .card .body_card {
+.card .body_card {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  margin: 0 10px;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 5px 10px;
 }
-.card .card .body_card .header_card {
+.card .body_card .header_card {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.card .card .body_card .header_card h2 {
+.card .body_card .header_card .nombre-producto {
   text-transform: uppercase;
+  font-size: 1.3rem;
 }
-.card .card .body_card .descripcion {
+.card .body_card .header_card .precio {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--color-accent);
+}
+.card .body_card .descripcion {
   color: #898989;
   margin-bottom: 5px;
 }
-.card .card .body_card div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.card .card .body_card div .precio {
-  font-size: 1.7rem;
-}
-.card .card .body_card div {
-  padding: 6px 8px;
-  outline: none;
+.card .body_card button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border-radius: var(--border-radius);
+  background-color: var(--color-accent);
+  cursor: pointer;
+  transition: all 0.3s ease;
   border: none;
-  border-radius: 1.5rem;
-  background-color: #ddd;
-  position: relative;
+}
+.card .body_card button a {
+  color: white;
+  letter-spacing: 1px;
+  font-size: 0.85rem;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.card .body_card button:hover {
+  background-color: var(--color-accent-hover);
+  box-shadow: 0 5px 15px rgb(250, 233, 195);
+  letter-spacing: 1.5px;
+}
+.card {
+  transition: 0.3s;
+}
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
 }
 
 html,

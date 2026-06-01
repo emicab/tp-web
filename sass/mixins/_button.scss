@@ -1,8 +1,28 @@
 @mixin button($color-bg) {
-  padding: 6px 8px;
-  outline: none;
-  border: none;
-  border-radius: 1.5rem;
-  background-color: $color-bg;
-  position: relative;
+  button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border-radius: var(--border-radius);
+    background-color: var(--color-accent);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+
+    a {
+      color: white;
+      letter-spacing: 1px;
+      font-size: 0.85rem;
+      text-align: center;
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    &:hover {
+      background-color: var(--color-accent-hover);
+      box-shadow: 0 5px 15px rgb(250, 233, 195);
+      letter-spacing: 1.5px;
+    }
+  }
 }
