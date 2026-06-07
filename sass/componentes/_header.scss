@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 20px;
+  height: 60px;
+  border-bottom: 2px solid var(--color-accent);
+}
+
+.header_nav-ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.nav_ul-a {
+  text-decoration: none;
+  color: var(--color-primario);
+}
+
+.active {
+  transform: translateY(-3px);
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  padding-bottom: 5px;
+  border-bottom: 3px solid var(--color-accent);
+}

@@ -3,12 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../css/style.css" />
 
-    <link rel="stylesheet" href="../estilos.css" />
-    <link rel="stylesheet" href="../responsive.css" />
+    <!-- <link rel="stylesheet" href="../estilos.css" /> -->
+    <!-- <link rel="stylesheet" href="../responsive.css" /> -->
     <title>Nosotros | TIENDA DE ABRIGOS</title>
   </head>
+  <style>
+    @theme {
+      --color-secundario: var(--color-secundario);
+    }
+  </style>
   <body>
     <a href="#contenido-principal" class="sr-only"
       >Saltar al contenido principal</a
@@ -36,25 +42,27 @@
       </nav>
     </header>
     <main class="main_nosotros" id="contenido-principal">
-      <section class="nosotros_section">
-        <div class="nosotros_text">
-          <h1 class="nosotros_titulo">Sobre Nosotros</h1>
-          <div class="nosotros_parrafos-container">
-            <p class="nosotros_parrafo">
+      <section class="flex items-center p-6">
+        <div class="nosotros_text flex flex-col justify-between">
+          <h1 class="nosotros_titulo text-2xl font-bold mb-6 justify-between">
+            Sobre Nosotros
+          </h1>
+          <div class="nosotros_parrafos-container flex flex-col gap-8">
+            <p class="nosotros_parrafo text-lg text-slate-600">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
               perferendis iste quia. Repellat vero corporis, reprehenderit et
               obcaecati quis voluptatum natus quae sit fuga quisquam quod
               inventore deserunt eligendi quas ex impedit repellendus ullam a
               corrupti? Suscipit excepturi itaque iure!
             </p>
-            <p class="nosotros_parrafo">
+            <p class="nosotros_parrafo text-lg text-slate-600">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
               perferendis iste quia. Repellat vero corporis, reprehenderit et
               obcaecati quis voluptatum natus quae sit fuga quisquam quod
               inventore deserunt eligendi quas ex impedit repellendus ullam a
               corrupti? Suscipit excepturi itaque iure!
             </p>
-            <p class="nosotros_parrafo">
+            <p class="nosotros_parrafo text-lg text-slate-600">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
               perferendis iste quia. Repellat vero corporis, reprehenderit et
               obcaecati quis voluptatum natus quae sit fuga quisquam quod
@@ -66,15 +74,22 @@
         <img
           src="../public/img/logo_indumentaria.png"
           alt=""
-          class="nosotros_img"
+          class="nosotros_img w-120 object-cover aspect-square rounded-[2px]"
         />
       </section>
     </main>
-    <footer>
+    <footer
+      class="flex items-center border-t-2 border[--color-secundario] justify-between px-6 py-4"
+    >
       <p>Todos los derechos reservados</p>
-      <p>Contacto: tienda@katclothes.com.ar</p>
+      <span class="flex gap-1">
+        <p>Contacto:</p>
+        <a href="mailto:tienda@katclothes.com" class="font-bold cursor-pointer"
+          >tienda@katclothes.com.ar</a
+        >
+      </span>
       <!-- redes sociales -->
-      <div class="rrss">
+      <div class="gap-4 flex">
         <a href="#">Facebook</a>
         <a href="#">Instagram</a>
         <a href="#">Tiktok</a>
