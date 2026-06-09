@@ -4,96 +4,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="../css/style.css" />
-
-    <!-- <link rel="stylesheet" href="../estilos.css" /> -->
-    <!-- <link rel="stylesheet" href="../responsive.css" /> -->
     <title>Nosotros | TIENDA DE ABRIGOS</title>
   </head>
-  <style>
-    @theme {
-      --color-secundario: var(--color-secundario);
-    }
-  </style>
-  <body>
-    <a href="#contenido-principal" class="sr-only"
-      >Saltar al contenido principal</a
-    >
-    <!--  -->
-    <header class="header">
-      <span class="header_logo"><strong>KAT</strong> CLOTHES</span>
-      <nav class="header_nav">
-        <ul class="header_nav-ul">
-          <li class="">
-            <a class="nav_ul-a" href="../index.html">Inicio</a>
+  <body class="bg-gray-50 text-gray-800 antialiased font-sans">
+    <a href="#contenido-principal" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-black text-white p-3 z-50">
+      Saltar al contenido principal
+    </a>
+  <header class="w-full bg-white border-b-2 border-[#8c6d53]">
+  <div class="w-full flex justify-between items-center p-4 md:px-8">
+    <div class="text-xl tracking-wider text-gray-900">
+      <strong class="font-black text-black">KAT</strong> CLOTHES
+    </div>
+    <nav>
+        <ul class="flex items-center gap-6 md:gap-8 list-none m-0 p-0">
+          <li>
+            <a class="text-[#8c6d53] hover:opacity-80 transition-opacity duration-200 text-sm font-normal" href="../index.html">Inicio</a>
           </li>
-          <li class="">
-            <a class="nav_ul-a" href="producto.html">Productos</a>
+          <li>
+            <a class="text-[#8c6d53] hover:opacity-80 transition-opacity duration-200 text-sm font-normal" href="producto.html">Productos</a>
           </li>
-          <li class="">
-            <a class="nav_ul-a" href="nosotros.html" aria-current="page"
-              >Nosotros</a
-            >
+          <li>
+            <a class="text-[#8c6d53] hover:opacity-80 transition-opacity duration-200 text-sm font-normal" href="nosotros.html" >Nosotros</a> 
           </li>
-          <li class="">
-            <a class="nav_ul-a" href="contacto.html">Contacto</a>
+          <li>
+            <a class="text-[#8c6d53] hover:opacity-80 transition-opacity duration-200 text-sm font-normal" href="contacto.html">Contacto</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main_nosotros" id="contenido-principal">
-      <section class="flex items-center p-6">
-        <div class="nosotros_text flex flex-col justify-between">
-          <h1 class="nosotros_titulo text-2xl font-bold mb-6 justify-between">
-            Sobre Nosotros
-          </h1>
-          <div class="nosotros_parrafos-container flex flex-col gap-8">
-            <p class="nosotros_parrafo text-lg text-slate-600">
+
+          <main class="w-full py-12 px-4 md:px-8" id="contenido-principal">
+    <section class="w-full flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+        <div class="w-full lg:w-1/2 space-y-6">
+          <h1 class="text-3xl md:text-4xl font-bold text-black tracking-normal">Sobre Nosotros</h1>
+          <div class="space-y-4 text-black leading-relaxed text-base font-normal">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              perferendis iste quia. Repellat vero corporis, reprehenderit et
+              obcaecati quis voluptatum natus quae sit fuga quisquam quod
+              inventore deserunt eligendi quas ex impedit repellendus ullam a
+              corrupti? Suscipit excepturi itaque iure!
+
+            </p>
+
+            <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
               perferendis iste quia. Repellat vero corporis, reprehenderit et
               obcaecati quis voluptatum natus quae sit fuga quisquam quod
               inventore deserunt eligendi quas ex impedit repellendus ullam a
               corrupti? Suscipit excepturi itaque iure!
             </p>
-            <p class="nosotros_parrafo text-lg text-slate-600">
+
+            <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
               perferendis iste quia. Repellat vero corporis, reprehenderit et
               obcaecati quis voluptatum natus quae sit fuga quisquam quod
               inventore deserunt eligendi quas ex impedit repellendus ullam a
               corrupti? Suscipit excepturi itaque iure!
             </p>
-            <p class="nosotros_parrafo text-lg text-slate-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              perferendis iste quia. Repellat vero corporis, reprehenderit et
-              obcaecati quis voluptatum natus quae sit fuga quisquam quod
-              inventore deserunt eligendi quas ex impedit repellendus ullam a
-              corrupti? Suscipit excepturi itaque iure!
-            </p>
+
           </div>
         </div>
-        <img
+       <img
           src="../public/img/logo_indumentaria.png"
-          alt=""
-          class="nosotros_img w-120 object-cover aspect-square rounded-[2px]"
+          alt="logotipo"
+          class="w-full lg:w-1/2 h-auto object-cover rounded-xl"
+
         />
       </section>
     </main>
-    <footer
-      class="flex items-center border-t-2 border[--color-secundario] justify-between px-6 py-4"
-    >
-      <p>Todos los derechos reservados</p>
-      <span class="flex gap-1">
-        <p>Contacto:</p>
-        <a href="mailto:tienda@katclothes.com" class="font-bold cursor-pointer"
-          >tienda@katclothes.com.ar</a
-        >
-      </span>
-      <!-- redes sociales -->
-      <div class="gap-4 flex">
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">Tiktok</a>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 px-4 text-center border-t border-gray-800 space-y-4">
+      <p class="text-sm">&copy; Todos los derechos reservados</p>
+      <p class="text-sm">Contacto: <a href="mailto:tienda@katclothes.com.ar" class="text-white hover:underline">tienda@katclothes.com.ar</a></p>
+      <div class="flex items-center justify-center gap-6 pt-2">
+        <a href="#" class="hover:text-white transition-colors duration-200 text-sm font-medium">Facebook</a>
+        <a href="#" class="hover:text-white transition-colors duration-200 text-sm font-medium">Instagram</a>
+        <a href="#" class="hover:text-white transition-colors duration-200 text-sm font-medium">Tiktok</a>
+
       </div>
+
     </footer>
+
   </body>
+
 </html>
