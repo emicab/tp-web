@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
-
-    <link rel="stylesheet" href="../estilos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../estilos.css" /> -->
     <link rel="stylesheet" href="../responsive.css" />
     <title>Contacto | TIENDA DE ABRIGOS</title>
   </head>
   <body>
-    <a href="#contenido-principal" class="sr-only"
-      >Saltar al contenido principal</a
-    >
-    <header class="header">
+    <!-- <a href="#contenido-principal" class="sr-only" -->
+      <!-- >Saltar al contenido principal</a -->
+    <!-- > -->
+    <header class="header border-bottom border-1 border-secondary-subtle" id="nav">
       <span class="header_logo"><strong>KAT</strong> CLOTHES</span>
       <nav class="header_nav">
         <ul class="header_nav-ul">
@@ -36,39 +36,41 @@
     </header>
 
     <main class="main" id="contenido-principal">
-      <section class="contacto-seccion">
+      <section class="container d-flex mt-3 mb-3 flex-column align-items-center py-5 border border-2 border-secondary-subtle rounded w-75 shadow-sm">
         <h1>Envianos tu mensaje</h1>
         <p>
           ¿Tenés alguna duda o consulta? Escribenos y te responderemos a la
           brevedad.
         </p>
 
-        <form class="contacto-form" action="#" method="POST">
-          <div class="form-group">
-            <label for="nombre">Nombre completo</label>
+        <form class="contacto-form mt-4" action="#" method="POST">
+          <div class="mb-1">
+            <label for="nombre" class="form-label">Nombre completo</label>
             <input
               type="text"
               id="nombre"
               name="nombre"
               required
               placeholder="Tu nombre..."
+              class="form-control"
             />
           </div>
 
-          <div class="form-group">
-            <label for="email">Correo electrónico</label>
+          <div class="mb-1">
+            <label for="email" class="form-label">Correo electrónico</label>
             <input
               type="email"
               id="email"
               name="email"
               required
               placeholder="Tu email..."
+              class="form-control"
             />
           </div>
 
-          <div class="form-group">
-            <label for="asunto">Asunto</label>
-            <select id="asunto" name="asunto">
+          <div class="mb-1">
+            <label for="asunto" class="form-label">Asunto</label>
+            <select id="asunto" name="asunto" class="form-control" required>
               <option value="consulta">Consulta general</option>
               <option value="pedido">Estado de mi pedido</option>
               <option value="devolucion">Devoluciones</option>
@@ -76,24 +78,26 @@
             </select>
           </div>
 
-          <div class="form-group">
-            <label for="mensaje">Mensaje</label>
+          <div class="mb-1">
+            <label for="mensaje" class="form-label">Mensaje</label>
             <textarea
               id="mensaje"
               name="mensaje"
               rows="5"
               required
+              class="form-control"
               placeholder="Escribí tu mensaje aquí..."
             ></textarea>
           </div>
-          <div class="form-group terminos">
+          <div class="mb-1 form-check">
             <input
               type="checkbox"
               id="conformidad"
               name="conformidad"
               required
+              class="form-check-input"
             />
-            <label for="conformidad">Acepto los términos y condiciones</label>
+            <label for="conformidad" class="form-check-label">Acepto los términos y condiciones</label>
           </div>
 
           <button type="submit" class="btn-enviar">Enviar Mensaje</button>
@@ -101,13 +105,15 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="bg-dark text-light text-center border-bottom border-1 border-secondary-subtle p-3">
       <p>Todos los derechos reservados</p>
       <p>Contacto: tienda@katclothes.com.ar</p>
-      <div class="rrss">
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">Tiktok</a>
+      <div class="redes-sociales">
+        <a href="#" class="text-decoration-none text-warning">Facebook</a>
+        |
+        <a href="#" class="text-decoration-none text-warning">Instagram</a>
+        |
+        <a href="#" class="text-decoration-none text-warning">Tiktok</a>
       </div>
     </footer>
   </body>
