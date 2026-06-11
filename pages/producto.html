@@ -1,12 +1,157 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+    <style>
+      * {
+        font-family: Lato, 'Sans Serif';
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
     <title>TIENDA ---- | Productos</title>
 </head>
 <body>
+    <header class="flex justify-between items-center px-5 h-15 border-b-2 border-[#7a4420b6]">
+      <span class="font-bold text-[#69420f]"><strong>KAT</strong> CLOTHES</span>
+      <nav class="block">
+        <ul class="flex list-none gap-4">
+          <a class="no-underline text-[#69420f]" href="../index.html">
+            <li class="">Inicio</li>
+          </a>
+          <a class="no-underline text-[#69420f]" href="producto.html">
+            <li class="">Productos</li>
+          </a>
+          <a class="no-underline text-[#69420f]" href="nosotros.html">
+            <li class="">Nosotros</li>
+          </a>
+          <a class="no-underline text-[#69420f]" href="contacto.html">
+            <li class="">Contacto</li>
+          </a>
+        </ul>
+      </nav>
+    </header>
     
+    <main class="block">
+        <div class="flex flex-col">
+            <div class="flex flex-col border border-[#b17d39] w-full">
+                <h3 class="m-5 text-center text-[#775b1f] underline bg-[#faf4e2]">Abrigos De Tonos Calidos</h3>
+                <div class="block">
+                    <div class="flex justify-center mb-8">
+                      <div class="w-[350px] h-[500px] rounded-[0.5rem] bg-white shadow-[0_4px_15px_#975c0f5e] overflow-hidden transition-all duration-300 flex flex-col border border-black/5 hover:-translate-y-2 hover:shadow-xl">
+                          <img src="../public/img/sueter_rojo.png" alt="Sueter Rojo" class="transition duration-600 ease-in-out hover:scale-103">
+                          <div class="p-5 flex flex-col flex-grow">
+                              <div class="flex items-center justify-between mb-3">
+                                  <h2 class="text-lg font-bold uppercase text-[#69420f] tracking-[0.5px]">Sueter Rojo</h2>
+                                  <p class="text-2xl font-black text-[#d88f22]">$27.000</p>
+                              </div>
+                              <p class="text-[#997a36] text-sm leading-6 mb-5">Nuestro único sueter rojo, ideal para para cualquier ocasión.</p>
+                              <div>
+                                  <a href="detalleProductoSueterRojo.html">
+                                      <button class="px-6 py-3 text-base font-bold rounded border-none cursor-pointer bg-[#7a4420b6] text-white uppercase transition-all duration-300 ease-in-out hover:bg-[#6d421a] hover:-translate-y-1 hover:shadow-lg">Ver más</button>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="w-[350px] h-[500px] rounded-[0.5rem] bg-white shadow-[0_4px_15px_#975c0f5e] overflow-hidden transition-all duration-300 flex flex-col border border-black/5 hover:-translate-y-2 hover:shadow-xl">
+                          <img src="../public/img/campera_naranja.png" alt="Campera Naranja" class="transition duration-600 ease-in-out hover:scale-103">
+                          <div class="p-5 flex flex-col flex-grow">
+                              <div class="flex items-center justify-between mb-3">
+                                  <h2 class="text-lg font-bold uppercase text-[#69420f] tracking-[0.5px]">Campera Naranja</h2>
+                                  <p class="text-2xl font-black text-[#d88f22]">$55.999</p>
+                              </div>
+                              <p class="text-[#997a36] text-sm leading-6 mb-5">Nuestra única campera naranja, ideal para para cualquier ocasión.</p>
+                              <div>
+                                  <a href="detalleProductoCamperaNaranja.html">
+                                      <button class="px-6 py-3 text-base font-bold rounded border-none cursor-pointer bg-[#7a4420b6] text-white uppercase transition-all duration-300 ease-in-out hover:bg-[#6d421a] hover:-translate-y-1 hover:shadow-lg">Ver más</button>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+                <div class="flex flex-col border border-[#b17d39] w-full">
+                    <h3 class="m-5 text-center text-[#775b1f] underline bg-[#faf4e2]">Abrigos De Tonos Frios</h3>
+                    <div class="block">
+                     <div class="flex justify-center mb-8">
+                        <div class="w-[350px] h-[500px] rounded-[0.5rem] bg-white shadow-[0_4px_15px_#975c0f5e] overflow-hidden transition-all duration-300 flex flex-col border border-black/5 hover:-translate-y-2 hover:shadow-xl">
+                          <img src="../public/img/campera_celeste.png" alt="Campera Celeste" class="transition duration-600 ease-in-out hover:scale-103">
+                          <div class="p-5 flex flex-col flex-grow">
+                              <div class="flex items-center justify-between mb-3">
+                                  <h2 class="text-lg font-bold uppercase text-[#69420f] tracking-[0.5px]">Campera Celeste</h2>
+                                  <p class="text-2xl font-black text-[#d88f22]">$55.999</p>
+                              </div>
+                              <p class="text-[#997a36] text-sm leading-6 mb-5">Nuestra famosa Campera Celeste Patagónica, ideal para hacer trekking.</p>
+                              <div>
+                                  <a href="detalleProductoCeleste.html">
+                                      <button class="px-6 py-3 text-base font-bold rounded border-none cursor-pointer bg-[#7a4420b6] text-white uppercase transition-all duration-300 ease-in-out hover:bg-[#6d421a] hover:-translate-y-1 hover:shadow-lg">Ver más</button>
+                                  </a>
+                              </div>
+                          </div>
+                              </div>
+                              <div class="w-[350px] h-[500px] rounded-[0.5rem] bg-white shadow-[0_4px_15px_#975c0f5e] overflow-hidden transition-all duration-300 flex flex-col border border-black/5 hover:-translate-y-2 hover:shadow-xl">
+                          <img src="../public/img/campera_verde.png" alt="Campera Verde" class="transition duration-600 ease-in-out hover:scale-103">
+                          <div class="p-5 flex flex-col flex-grow">
+                              <div class="flex items-center justify-between mb-3">
+                                  <h2 class="text-lg font-bold uppercase text-[#69420f] tracking-[0.5px]">Campera Verde</h2>
+                                  <p class="text-2xl font-black text-[#d88f22]">$49.999</p>
+                              </div>
+                              <p class="text-[#997a36] text-sm leading-6 mb-5">Nuestra única campera verde, ideal para para cualquier ocasión.</p>
+                              <div>
+                                  <a href="detalleProductoCamperaVerde.html">
+                                      <button class="px-6 py-3 text-base font-bold rounded border-none cursor-pointer bg-[#7a4420b6] text-white uppercase transition-all duration-300 ease-in-out hover:bg-[#6d421a] hover:-translate-y-1 hover:shadow-lg">Ver más</button>
+                                  </a>
+                              </div>
+                          </div>
+                              </div>
+                              <div class="w-[350px] h-[500px] rounded-[0.5rem] bg-white shadow-[0_4px_15px_#975c0f5e] overflow-hidden transition-all duration-300 flex flex-col border border-black/5 hover:-translate-y-2 hover:shadow-xl">
+                          <img src="../public/img/sueter_gris.png" alt="Sueter Gris" class="transition duration-600 ease-in-out hover:scale-103">
+                          <div class="p-5 flex flex-col flex-grow">
+                              <div class="flex items-center justify-between mb-3">
+                                  <h2 class="text-lg font-bold uppercase text-[#69420f] tracking-[0.5px]">Sueter Gris</h2>
+                                  <p class="text-2xl font-black text-[#d88f22]">$27.000</p>
+                              </div>
+                              <p class="text-[#997a36] text-sm leading-6 mb-5">Nuestro único sueter gris, ideal para los días de frío.</p>
+                              <div>
+                                  <a href="detalleProductoSueterGris.html">
+                                      <button class="px-6 py-3 text-base font-bold rounded border-none cursor-pointer bg-[#7a4420b6] text-white uppercase transition-all duration-300 ease-in-out hover:bg-[#6d421a] hover:-translate-y-1 hover:shadow-lg">Ver más</button>
+                                  </a>
+                              </div>
+                          </div>
+                              </div>
+                              <div class="w-[350px] h-[500px] rounded-[0.5rem] bg-white shadow-[0_4px_15px_#975c0f5e] overflow-hidden transition-all duration-300 flex flex-col border border-black/5 hover:-translate-y-2 hover:shadow-xl">
+                          <img src="../public/img/sueter_azul.png" alt="Sueter Azul" class="transition duration-600 ease-in-out hover:scale-103">
+                          <div class="p-5 flex flex-col flex-grow">
+                              <div class="flex items-center justify-between mb-3">
+                                  <h2 class="text-lg font-bold uppercase text-[#69420f] tracking-[0.5px]">Sueter Azul</h2>
+                                  <p class="text-2xl font-black text-[#d88f22]">$27.000</p>
+                              </div>
+                              <p class="text-[#997a36] text-sm leading-6 mb-5">Nuestro único sueter azul, ideal para los días de frío.</p>
+                              <div>
+                                  <a href="detalleProductoSueterAzul.html">
+                                      <button class="px-6 py-3 text-base font-bold rounded border-none cursor-pointer bg-[#7a4420b6] text-white uppercase transition-all duration-300 ease-in-out hover:bg-[#6d421a] hover:-translate-y-1 hover:shadow-lg">Ver más</button>
+                                  </a>
+                              </div>
+                          </div>
+                              </div>
+                    </div>
+                </div>
+        </div>
+    </main>
+
+    <footer>
+      <p>Todos los derechos reservados</p>
+      <p>Contacto: tienda@tiendafantasia.com.ar</p>
+      <!-- redes sociales -->
+      <div class="flex gap-4">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Tiktok</a>
+      </div>
+    </footer>
 </body>
 </html>

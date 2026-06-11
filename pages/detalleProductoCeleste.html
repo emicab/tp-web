@@ -1,51 +1,59 @@
 <!doctype html>
 <html lang="es">
   <head>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../estilos.css" />
+    <style>
+      * {
+        font-family: Lato, 'Sans Serif';
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
     <title>Detalle de Producto | TIENDA FANTASIA</title>
   </head>
   <body>
     <!--  -->
-    <header class="header">
-      <span class="header_logo"><strong>KAT</strong> CLOTHES</span>
-      <nav class="header_nav">
-        <ul class="header_nav-ul">
-          <a class="nav_ul-a" href="../index.html">
+    <header class="flex justify-between items-center px-5 h-15 border-b-2 border-[#7a4420b6]">
+      <span class="font-bold text-[#69420f]"><strong>KAT</strong> CLOTHES</span>
+      <nav class="block">
+        <ul class="flex list-none gap-4">
+          <a class="no-underline text-[#69420f]" href="../index.html">
             <li class="">Inicio</li>
           </a>
-          <a class="nav_ul-a" href="producto.html">
+          <a class="no-underline text-[#69420f]" href="producto.html">
             <li class="">Productos</li>
           </a>
-          <a class="nav_ul-a" href="nosotros.html">
+          <a class="no-underline text-[#69420f]" href="nosotros.html">
             <li class="">Nosotros</li>
           </a>
-          <a class="nav_ul-a" href="contacto.html">
+          <a class="no-underline text-[#69420f]" href="contacto.html">
             <li class="">Contacto</li>
           </a>
         </ul>
       </nav>
     </header>
     <!--  -->
-    <main class="main">
-      <section class="producto-detalle">
-        <div class="producto-imagen">
+    <main class="block">
+      <section class="flex items-start bg-[#faf4e2] justify-around gap-12 p-10">
+        <div class="w-[30%] text-center">
           <img src="../public/img/campera_celeste.png" alt="Campera Celeste" />
         </div>
-        <div class="producto-info">
-          <h1>Campera Celeste</h1>
-          <p class="precio">$49.999</p>
+        <div class="w-[50%]">
+          <h1 class="text-[47px]">Campera Celeste</h1>
+          <p class="text-2xl font-black text-[#d88f22]">$49.999</p>
 
-          <div class="descripcion-box">
+          <div class="mb-8">
             <h3>Descripción</h3>
-            <p class="descripcion">
+            <p class="text-[#997a36] text-sm leading-6 mb-5">
               Nuestra Campera Celeste es única en su estilo. Fabricada con materiales de alta calidad, es ideal para los días de frío. Su color celeste único aporta calidez a cualquier outfit.
             </p>
           </div>
 
-          <div class="opciones">
-            <div class="opcion-item">
+          <div class="mb-8">
+            <div class="flex items-center gap-2.5 mb-4">
               <label for="talle">Selecciona tu Talle:</label>
               <select id="talle" name="talle">
                 <option value="s">S</option>
@@ -56,12 +64,12 @@
             </div>
           </div>
 
-          <div class="acciones">
-            <button class="btn-comprar">Comprar ahora</button>
-            <button class="btn-carrito">Agregar al carrito</button>
+          <div class="flex gap-4 mb-8">
+            <button class="px-6 py-3 text-base font-bold rounded border-none cursor-pointer bg-[#7a4420b6] text-white uppercase transition-all duration-300 ease-in-out hover:bg-[#6d421a] hover:-translate-y-1 hover:shadow-lg">Comprar ahora</button>
+            <button class="px-6 py-3 text-base font-bold rounded border-none cursor-pointer bg-[#69420f] text-white uppercase transition-all duration-300 ease-in-out hover:bg-[#b17d39] hover:-translate-y-1 hover:shadow-lg">Agregar al carrito</button>
           </div>
 
-          <div class="detalles-adicionales">
+          <div class="mt-5">
             <h3>Especificaciones Técnicas:</h3>
             <ul>
               <li>Material principal: Poliéster y Algodón</li>
@@ -77,7 +85,7 @@
       <p>Todos los derechos reservados</p>
       <p>Contacto: tienda@tiendafantasia.com.ar</p>
       <!-- redes sociales -->
-      <div class="rrss">
+      <div class="flex gap-4">
         <a href="#">Facebook</a>
         <a href="#">Instagram</a>
         <a href="#">Tiktok</a>

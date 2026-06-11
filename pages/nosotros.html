@@ -1,68 +1,64 @@
 <!doctype html>
 <html lang="es">
   <head>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../estilos.css" />
+    <style>
+      * {
+        font-family: Lato, 'Sans Serif';
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
     <title>Nosotros | TIENDA FANTASIA</title>
   </head>
   <body>
     <!--  -->
-    <header class="header">
-      <span class="header_logo">LOGO</span>
-      <nav class="header_nav">
-        <ul class="header_nav-ul">
-          <a class="nav_ul-a" href="../index.html">
+    <header class="flex justify-between items-center px-5 h-15 border-b-2 border-[#7a4420b6]">
+      <span class="font-bold text-[#69420f]">LOGO</span>
+      <nav class="block">
+        <ul class="flex list-none gap-4">
+          <a class="no-underline text-[#69420f]" href="../index.html">
             <li class="">Inicio</li>
           </a>
-          <a class="nav_ul-a" href="producto.html">
+          <a class="no-underline text-[#69420f]" href="producto.html">
             <li class="">Productos</li>
           </a>
-          <a class="nav_ul-a" href="nosotros.html">
+          <a class="no-underline text-[#69420f]" href="nosotros.html">
             <li class="">Nosotros</li>
           </a>
-          <a class="nav_ul-a" href="contacto.html">
+          <a class="no-underline text-[#69420f]" href="contacto.html">
             <li class="">Contacto</li>
           </a>
         </ul>
       </nav>
     </header>
-    <main class="main_nosotros">
-      <section class="nosotros_section">
-        <div class="nosotros_text">
-            <h1 class="nosotros_titulo">Sobre Nosotros</h1>
-            <div class="nosotros_parrafos-container">
-                <p class="nosotros_parrafo">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-                  perferendis iste quia. Repellat vero corporis, reprehenderit et
-                  obcaecati quis voluptatum natus quae sit fuga quisquam quod inventore
-                  deserunt eligendi quas ex impedit repellendus ullam a corrupti?
-                  Suscipit excepturi itaque iure!
+    <main class="block">
+      <section class="flex justify-center items-center flex-row mx-auto p-8">
+        <div class="flex justify-between flex-col gap-8">
+            <h1 class="block text-4xl font-bold text-[#69420f]">Sobre Nosotros</h1>
+            <div class="flex justify-center flex-col gap-8">
+                <p class="w-4/5 text-xl leading-6 text-[#333]">
+                  Somos un grupo de amigos que se unieron para crear una tienda de ropa de abrigo, con el objetivo de ofrecer a nuestros clientes productos de alta calidad y estilo único. Nos apasiona la moda y queremos compartir esa pasión a través de nuestra tienda, brindando a nuestros clientes una experiencia de compra excepcional y productos que los hagan sentir cómodos y a la moda durante los meses más fríos del año.
                 </p>
-                <p class="nosotros_parrafo">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-                  perferendis iste quia. Repellat vero corporis, reprehenderit et
-                  obcaecati quis voluptatum natus quae sit fuga quisquam quod inventore
-                  deserunt eligendi quas ex impedit repellendus ullam a corrupti?
-                  Suscipit excepturi itaque iure!
+                <p class="w-4/5 text-xl leading-6 text-[#333]">
+                  Como asi mismo, somos de Tierra del Fuego, por lo que conocemos la importancia de contar con prendas de abrigo de calidad para enfrentar las bajas temperaturas. Nuestra tienda se especializa en ofrecer una amplia variedad de abrigos, chaquetas y suéteres diseñados para brindar calidez y estilo en cualquier ocasión. Nos esforzamos por seleccionar cuidadosamente cada prenda, asegurándonos de que cumpla con nuestros estándares de calidad y diseño.
                 </p>
-                <p class="nosotros_parrafo">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-                  perferendis iste quia. Repellat vero corporis, reprehenderit et
-                  obcaecati quis voluptatum natus quae sit fuga quisquam quod inventore
-                  deserunt eligendi quas ex impedit repellendus ullam a corrupti?
-                  Suscipit excepturi itaque iure!
+                <p class="w-4/5 text-xl leading-6 text-[#333]">
+                  Para finalizar, nuestro compromiso es brindar a nuestros clientes una experiencia de compra excepcional, ofreciendo productos de alta calidad y un servicio al cliente amigable y eficiente. Nos enorgullece ser parte de la comunidad local y esperamos seguir creciendo junto a nuestros clientes, ofreciendo prendas de abrigo que los mantengan cálidos y a la moda durante muchos años.
                 </p>
             </div>
         </div>
-        <img src="../public/img/img_local.png" alt="" class="nosotros_img" />
+        <img src="../public/img/img_local.png" alt="" class="w-[520px] h-[500px] object-cover rounded-[0.5rem]" />
       </section>
     </main>
     <footer>
       <p>Todos los derechos reservados</p>
       <p>Contacto: tienda@tiendafantasia.com.ar</p>
       <!-- redes sociales -->
-      <div class="rrss">
+      <div class="flex gap-4">
         <a href="#">Facebook</a>
         <a href="#">Instagram</a>
         <a href="#">Tiktok</a>
