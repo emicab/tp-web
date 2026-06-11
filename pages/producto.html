@@ -3,144 +3,161 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="../css/style.css" />
-
-    <link rel="stylesheet" href="../estilos.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="../responsive.css" />
     <title>TIENDA DE ABRIGOS | Productos</title>
   </head>
   <body>
-    <a href="#contenido-principal" class="sr-only">Saltar al contenido principal</a>
-    <!--  -->
-    <header class="header" id="nav">
+    
+    <header class="header flex items-center justify-between border-b-2 border-[#69420f] py-6 h-15 p-[10px_20px] md:p-[15px_20px] md:px-12 lg:p-[10px_20px] relative" id="nav">
       <span class="header_logo"><strong>KAT</strong> CLOTHES</span>
       <nav class="header_nav">
-        <ul class="header_nav-ul">
-          <li class="">
-            <a class="nav_ul-a" href="../index.html">Inicio</a>
+        <ul class="header_nav-ul flex gap-[0.75rem] md:gap-3">
+          <li class="md:text-center">
+            <a class="nav_ul-a text-[#69420f] hover:text-[#d88f22] transition-colors md:block md:p-[10px_20px]" href="../index.html">Inicio</a>
           </li>
-          <li class="">
-            <a class="nav_ul-a" href="producto.html" aria-current="page">Productos</a>
+          <li>
+            <a class="nav_ul-a text-[#69420f] hover:text-[#d88f22] transition-colors md:block md:p-[10px_20px]" href="producto.html" aria-current="page">Productos</a>
           </li>
-          <li class="">
-            <a class="nav_ul-a" href="nosotros.html">Nosotros</a>
+          <li>
+            <a class="nav_ul-a text-[#69420f] hover:text-[#d88f22] transition-colors md:block md:p-[10px_20px]" href="nosotros.html">Nosotros</a>
           </li>
-          <li class="">
-            <a class="nav_ul-a" href="contacto.html">Contacto</a>
+          <li>
+            <a class="nav_ul-a text-[#69420f] hover:text-[#d88f22] transition-colors md:block md:p-[10px_20px]" href="contacto.html">Contacto</a>
           </li>
         </ul>
       </nav>
     </header>
-    <!--  -->
+
     <main class="main" id="contenido-principal">
-    <header class="header_hero">
-        <div class="hero1">
-            <h1 class="hero_text">Abrigos patagónicos y originales.</h1>
+      <header>
+      <h1 class="text-2xl md:text-4xl font-bold text-black text-center px-4 drop-shadow-[0_2px_8px_rgba(255,255,255,0.8)]">
+        Abrigos patagónicos y originales.
+      </h1>
+      
         </div>
-    </header>
-        <div class="categories">
-            <div class="cat">
-                <h3>Abrigos De Tonos Calidos</h3>
-                <div class="lista">
-                    <div class="container_cards">
-                      <div class="card">
-                          <img src="../public/img/sueter_rojo.png" alt="Sueter Rojo">
-                          <div class="body_card">
-                              <div class="header_card">
-                                  <h2>Sueter Rojo</h2>
-                                  <p class="precio">$27.000</p>
-                              </div>
-                              <p class="descripcion">Nuestro único sueter rojo, ideal para para cualquier ocasión.</p>
-                              <div>
-                                  <a href="detalleProductoSueterRojo.html" class="btn-ver-mas">Ver más</a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="card">
-                          <img src="../public/img/campera_naranja.png" alt="Campera Naranja">
-                          <div class="body_card">
-                              <div class="header_card">
-                                  <h2>Campera Naranja</h2>
-                                  <p class="precio">$49.999</p>
-                              </div>
-                              <p class="descripcion">Nuestra única campera naranja, ideal para para cualquier ocasión.</p>
-                              <div>
-                                  <a href="detalleProductoCamperaNaranja.html" class="btn-ver-mas">Ver más</a>
-                              </div>
-                          </div>
-                      </div>
-                </div>
+      </header>
+
+      <div class="div-titulo block w-full bg-[#fcf8e3] border-y border-[#dfd7ca] py-6 text-center" style="margin-top: 10px; margin-bottom:10px;">
+        <h3 class="font-serif text-lg font-bold text-[#6b4f27] tracking-normal inline-block border-b-2 border-[#846438] pb-1">
+          Abrigos De Tonos Cálidos
+        </h3>
+      </div>
+      
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="container_cards" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; width: 100%; margin-top: 35px; margin-bottom: 60px;">
+          
+          <div class="card w-full max-w-[400px] rounded-[0.8rem] bg-[#efefef] overflow-hidden transition-all duration-300 hover:shadow-[0_4px_8px_rgba(0,0,0,0.2)] hover:-translate-y-1 flex flex-col justify-between">
+            <img src="../public/img/sueter_rojo.png" alt="Sueter Rojo" class="w-full aspect-square object-cover">
+            <div class="body_card flex flex-col justify-between gap-2.5 m-[15px_10px] flex-grow">
+              <div class="header_card flex items-baseline justify-between mb-2">
+                <h2 class="uppercase text-[1rem] font-bold text-gray-800">Sueter Rojo</h2>
+                <p class="text-[1.1rem] font-bold text-[#69420f]">$27.000</p>
+              </div>
+              <p class="descripcion text-[#898989] mb-1.25 text-[0.85rem]">Nuestro único sueter rojo, ideal para cualquier ocasión.</p>
+              <div class="div-btn">
+                <a href="detalleProductoSueterRojo.html" class="btn-ver-mas block py-2 px-4 rounded bg-[#69420f] text-center font-bold text-white transition-colors hover:bg-[#b57417]">Ver más</a>
+              </div>
             </div>
-                <div class="cat">
-                    <h3>Abrigos De Tonos Frios</h3>
-                    <div class="lista">
-                     <div class="container_cards">
-                        <div class="card">
-                          <img src="../public/img/campera_celeste.png" alt="Campera Celeste">
-                          <div class="body_card">
-                              <div class="header_card">
-                                  <h2>Campera Celeste</h2>
-                                  <p class="precio">$49.999</p>
-                              </div>
-                              <p class="descripcion">Nuestra famosa Campera Celeste Patagónica, ideal para hacer trekking.</p>
-                              <div>
-                                  <a href="detalleProductoCeleste.html" class="btn-ver-mas">Ver más</a>
-                              </div>
-                          </div>
-                              </div>
-                              <div class="card">
-                          <img src="../public/img/campera_verde.png" alt="Campera Verde">
-                          <div class="body_card">
-                              <div class="header_card">
-                                  <h2>Campera Verde</h2>
-                                  <p class="precio">$49.999</p>
-                              </div>
-                              <p class="descripcion">Nuestra única campera verde, ideal para para cualquier ocasión.</p>
-                              <div>
-                                  <a href="detalleProductoCamperaVerde.html" class="btn-ver-mas">Ver más</a>
-                              </div>
-                          </div>
-                              </div>
-                              <div class="card">
-                          <img src="../public/img/sueter_gris.png" alt="Sueter Gris">
-                          <div class="body_card">
-                              <div class="header_card">
-                                  <h2>Sueter Gris</h2>
-                                  <p class="precio">$27.000</p>
-                              </div>
-                              <p class="descripcion">Nuestro único sueter gris, ideal para los días de frío.</p>
-                              <div>
-                                  <a href="detalleProductoSueterGris.html" class="btn-ver-mas">Ver más</a>
-                              </div>
-                          </div>
-                              </div>
-                              <div class="card">
-                          <img src="../public/img/sueter_azul.png" alt="Sueter Azul">
-                          <div class="body_card">
-                              <div class="header_card">
-                                  <h2>Sueter Azul</h2>
-                                  <p class="precio">$27.000</p>
-                              </div>
-                              <p class="descripcion">Nuestro único sueter azul, ideal para los días de frío.</p>
-                              <div>
-                                  <a href="detalleProductoSueterAzul.html" class="btn-ver-mas">Ver más</a>
-                              </div>
-                          </div>
-                              </div>
-                    </div>
-                </div>
+          </div>
+
+          <div class="card w-full max-w-[400px] rounded-[0.8rem] bg-[#efefef] overflow-hidden transition-all duration-300 hover:shadow-[0_4px_8px_rgba(0,0,0,0.2)] hover:-translate-y-1 flex flex-col justify-between">
+            <img src="../public/img/campera_naranja.png" alt="Campera Naranja" class="w-full aspect-square object-cover">
+            <div class="body_card flex flex-col justify-between gap-2.5 m-[15px_10px] flex-grow">
+              <div class="header_card flex items-baseline justify-between mb-2">
+                <h2 class="uppercase text-[1rem] font-bold text-gray-800">Campera Naranja</h2>
+                <p class="text-[1.1rem] font-bold text-[#69420f]">$49.999</p>
+              </div>
+              <p class="descripcion text-[#898989] mb-1.25 text-[0.85rem]">Nuestra única campera naranja, ideal para cualquier ocasión.</p>
+              <div class="div-btn">
+                <a href="detalleProductoCamperaNaranja.html" class="btn-ver-mas block py-2 px-4 rounded bg-[#69420f] text-center font-bold text-white transition-colors hover:bg-[#b57417]">Ver más</a>
+              </div> 
             </div>
+          </div>
+
         </div>
+      </div>
+
+
+      <div class="div-titulo block w-full bg-[#fcf8e3] border-y border-[#dfd7ca] py-4 text-center" style="margin-top: 50px; margin-bottom: 30px;">
+        <h3 class="font-serif text-lg font-bold text-[#6b4f27] tracking-normal inline-block border-b-2 border-[#846438] pb-1">
+          Abrigos De Tonos Fríos
+        </h3>
+      </div>
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="container_cards" style="display:  flex; flex-direction: row; justify-content: right; gap: 30px; width: 100%; margin:0 auto; margin-top: 35px; margin-bottom: 60px;">
+          
+          <div class="card w-full max-w-[400px] rounded-[0.8rem] bg-[#efefef] overflow-hidden transition-all duration-300 hover:shadow-[0_4px_8px_rgba(0,0,0,0.2)] hover:-translate-y-1 flex flex-col justify-between">
+            <img src="../public/img/campera_celeste.png" alt="Campera Celeste" class="w-full aspect-square object-cover">
+            <div class="body_card flex flex-col justify-between gap-2.5 m-[15px_10px] flex-grow">
+              <div class="header_card flex items-baseline justify-between mb-2">
+                <h2 class="uppercase text-[1rem] font-bold text-gray-800">Campera Celeste</h2>
+                <p class="text-[1.1rem] font-bold text-[#69420f]">$49.999</p>
+              </div>
+              <p class="descripcion text-[#898989] mb-1.25 text-[0.85rem]">Nuestra famosa Campera Celeste Patagónica, ideal para hacer trekking.</p>
+              <div class="div-btn">
+                <a href="detalleProductoCeleste.html" class="btn-ver-mas block py-2 px-4 rounded bg-[#69420f] text-center font-bold text-white transition-colors hover:bg-[#b57417]">Ver más</a>
+              </div>     
+            </div>
+          </div>
+
+          <div class="card w-full max-w-[400px] rounded-[0.8rem] bg-[#efefef] overflow-hidden transition-all duration-300 hover:shadow-[0_4px_8px_rgba(0,0,0,0.2)] hover:-translate-y-1 flex flex-col justify-between">
+            <img src="../public/img/campera_verde.png" alt="Campera Verde" class="w-full aspect-square object-cover">
+            <div class="body_card flex flex-col justify-between gap-2.5 m-[15px_10px] flex-grow">
+              <div class="header_card flex items-baseline justify-between mb-2">
+                <h2 class="uppercase text-[1rem] font-bold text-gray-800">Campera Verde</h2>
+                <p class="text-[1.1rem] font-bold text-[#69420f]">$49.999</p>
+              </div>
+              <p class="descripcion text-[#898989] mb-1.25 text-[0.85rem]">Nuestra única campera verde, ideal para cualquier ocasión.</p>
+              <div class="div-btn">
+                <a href="detalleProductoCamperaVerde.html" class="btn-ver-mas block py-2 px-4 rounded bg-[#69420f] text-center font-bold text-white transition-colors hover:bg-[#b57417]">Ver más</a>
+              </div>
+            </div>
+          </div>  
+
+          <div class="card w-full max-w-[400px] rounded-[0.8rem] bg-[#efefef] overflow-hidden transition-all duration-300 hover:shadow-[0_4px_8px_rgba(0,0,0,0.2)] hover:-translate-y-1 flex flex-col justify-between">
+            <img src="../public/img/sueter_gris.png" alt="Sueter Gris" class="w-full aspect-square object-cover">
+            <div class="body_card flex flex-col justify-between gap-2.5 m-[15px_10px] flex-grow">
+              <div class="header_card flex items-baseline justify-between mb-2">
+                <h2 class="uppercase text-[1rem] font-bold text-gray-800">Sueter Gris</h2>
+                <p class="text-[1.1rem] font-bold text-[#69420f]">$27.000</p>
+              </div>
+              <p class="descripcion text-[#898989] mb-1.25 text-[0.85rem]">Nuestro único sueter gris, ideal para los días de frío.</p>
+              <div class="div-btn">
+                <a href="detalleProductoSueterGris.html" class="btn-ver-mas block py-2 px-4 rounded bg-[#69420f] text-center font-bold text-white transition-colors hover:bg-[#b57417]">Ver más</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card w-full max-w-[400px] rounded-[0.8rem] bg-[#efefef] overflow-hidden transition-all duration-300 hover:shadow-[0_4px_8px_rgba(0,0,0,0.2)] hover:-translate-y-1 flex flex-col justify-between">
+            <img src="../public/img/sueter_azul.png" alt="Sueter Azul" class="w-full aspect-square object-cover">
+            <div class="body_card flex flex-col justify-between gap-2.5 m-[15px_10px] flex-grow">
+              <div class="header_card flex items-baseline justify-between mb-2">
+                <h2 class="uppercase text-[1rem] font-bold text-gray-800">Sueter Azul</h2>
+                <p class="text-[1.1rem] font-bold text-[#69420f]">$27.000</p>
+              </div>
+              <p class="descripcion text-[#898989] mb-1.25 text-[0.85rem]">Nuestro único sueter azul, ideal para los días de frío.</p>
+              <div class="div-btn">
+                <a href="detalleProductoSueterAzul.html" class="btn-ver-mas block py-2 px-4 rounded bg-[#69420f] text-center font-bold text-white transition-colors hover:bg-[#b57417]">Ver más</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </main>
-    <footer>
-      <p>Todos los derechos reservados</p>
-      <p>Contacto: tienda@katclothes.com.ar</p>
-      <!-- redes sociales -->
-      <div class="rrss">
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">Tiktok</a>
+               
+    <footer class="w-full mt-16 bg-black py-8 flex flex-col items-center gap-4 text-center text-sm text-gray-300">
+      <p class="text-white">Todos los derechos reservados</p>
+      <p>Contacto: <a href="mailto:tienda@katclothes.com.ar" class="hover:underline text-white">tienda@katclothes.com.ar</a></p>
+      <div class="rrss flex gap-4 mt-2">
+        <a href="#" class="text-white hover:text-[#d88f22] transition-colors">Facebook</a>
+        <a href="#" class="text-white hover:text-[#d88f22] transition-colors">Instagram</a>
+        <a href="#" class="text-white hover:text-[#d88f22] transition-colors">Tiktok</a>
       </div>
     </footer>
-  </body>
+
+  </body> 
 </html>
